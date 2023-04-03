@@ -4,9 +4,9 @@
 import java.util.Arrays;
 
 public class Task_1 {
-    public void merge(int[] arr, int left, int middle, int right) {
-        int n1 = middle - left + 1;
-        int n2 = right - middle;
+    public void merge(int[] arr, int left, int srednee, int right) {
+        int n1 = srednee - left + 1;
+        int n2 = right - srednee;
 
         int[] leftArray = new int[n1];
         int[] rightArray = new int[n2];
@@ -15,7 +15,7 @@ public class Task_1 {
             leftArray[i] = arr[left + i];
         }
         for (int j = 0; j < n2; ++j) {
-            rightArray[j] = arr[middle + 1 + j];
+            rightArray[j] = arr[srednee + 1 + j];
         }
 
         int i = 0, j = 0;
